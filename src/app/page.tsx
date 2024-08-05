@@ -1,5 +1,4 @@
 "use client";
-
 import { NFT_CONTRACTS } from "@/consts/nft_contracts";
 import { Link } from "@chakra-ui/next-js";
 import {

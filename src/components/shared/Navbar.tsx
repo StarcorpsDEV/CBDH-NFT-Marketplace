@@ -42,7 +42,7 @@ export function Navbar() {
             href="/"
             _hover={{ textDecoration: "none" }}
           >
-            <Image src="/smf.png"/>
+            <Image src="/erc20-icons/smf.png"/>
           </Heading>
         </Box>
         <Box display={{ lg: "block", base: "none" }}>

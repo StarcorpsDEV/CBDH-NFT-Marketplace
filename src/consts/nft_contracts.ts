@@ -1,5 +1,5 @@
 import type { Chain } from "thirdweb";
-import { avalancheFuji, polygonAmoy } from "./chains";
+import { polygon } from "./chains";
 
 export type NftContract = {
   address: string;
@@ -20,56 +20,65 @@ export type NftContract = {
  */
 export const NFT_CONTRACTS: NftContract[] = [
   {
-    address: "0x6b869a0cF84147f05a447636c42b8E53De65714E",
-    chain: avalancheFuji,
-    title: "Steakhouse: Liberatorz",
+    address: "0xd4bd30B0C6143f352b1a4d138e4ac231e7200BA7",
+    chain: polygon,
+    title: "Diamond Fluid Staking Badger",
     thumbnailUrl:
-      "https://258c828e8cc853bf5e0efd001055fb39.ipfscdn.io/ipfs/bafybeigonh3hde5suwcb3qvkh6ljtvxv7ubfmcqbwfvi3ihoi3igd27jwe/SteakhouseLogo.svg",
+    "/DMFSB_featured_image_small.webp",
+      //"https://ipfs.io/ipfs/QmajnnWi5jtvSLU4wmJY85W7P1fYi7SRFpmyDwRCnVZCJA?filename=featured_image.webp",
     type: "ERC721",
   },
   {
-    address: "0xC5A2c72c581eA4A17e17bEeF38a9597132830401",
-    chain: avalancheFuji,
-    title: "Ugly Waifu",
+    address: "0x37B1c0f1648aA496b04657c8cA639e11731D737b",
+    chain: polygon,
+    title: "Staked Mater Fluid Staking Badger",
     thumbnailUrl:
-      "https://258c828e8cc853bf5e0efd001055fb39.ipfscdn.io/ipfs/bafybeidaadqapi7twzd7pjp24tu4ngsr3teubrhop7hg3jk3oj6lqysfgm/OS-LOGO.png",
-    slug: "ugly-waifu",
-    type: "ERC721",
-  },
-
-  {
-    address: "0x0896Db00D8987Fba2152aa7c14c4255eBC7354cE",
-    chain: avalancheFuji,
-    title: "Unnamed Collection",
-    description: "",
-    thumbnailUrl:
-      "https://258c828e8cc853bf5e0efd001055fb39.ipfscdn.io/ipfs/Qmct2vS78Uwug3zVtqQognskPPRmd4wRQiaDAQWt1kRJws/0.png",
-    slug: "unnamed-collection",
+    "/SMFSB_featured_image_small.webp",
+      //"https://ipfs.io/ipfs/QmZQA59sQ2ssLLiktvSJvh6yfTAZ32x3c5ytnA2VmjwtLL?filename=featured_image.webp",
     type: "ERC721",
   },
   {
-    address: "0x0ACaCa3d3F64bb6e6D3564BBc891c58Bd4A4c83c",
-    chain: avalancheFuji,
-    title: "GoroBot",
+    address: "0x5dF79DD2f30269b1065f8D3497919e1E49702305",
+    chain: polygon,
+    title: "Refined Green Fluid Staking Badger",
     thumbnailUrl:
-      "https://258c828e8cc853bf5e0efd001055fb39.ipfscdn.io/ipfs/bafybeiay3ffxy3os56bvnu5cmq7gids4v6n4hf5nvvcb3gy2dzavi3ltnu/profile.jpg",
-    slug: "gorobot",
+    "/RGFSB_featured_image_small.webp",
+      //"https://ipfs.io/ipfs/QmYGqfmMvtYEDX7mMeKdGFgTgN6gVP63iR4hfnbz9s6UXf?filename=featured_image.webp",
     type: "ERC721",
   },
   {
-    address: "0x4b6CDEFF5885A57678261bb95250aC43aD490752",
-    chain: polygonAmoy,
-    title: "Mata NFT",
+    address: "0x303060B9ec801D809C660687D1e5BAA540b40B62",
+    chain: polygon,
+    title: "Refined Purple Fluid Staking Badger",
     thumbnailUrl:
-      "https://258c828e8cc853bf5e0efd001055fb39.ipfscdn.io/ipfs/bafybeidec7x6bptqmrxgptaedd7wfwxbsccqfogzwfsd4a7duxn4sdmnxy/0.png",
+    "/RPFSB_featured_image_small.webp",  
+    //"https://ipfs.io/ipfs/QmaJDzSH4WkZhwx2RqpeKLw63ZBWtEnag7W6jn816VPvEg?filename=featured_image.webp",
     type: "ERC721",
   },
   {
-    address: "0xd5e815241882676F772A624E3892b27Ff3a449c4",
-    chain: avalancheFuji,
-    title: "Cats (ERC1155)",
+    address: "0x8Dbfce5096567259a8839C80c6ca15e169381560",
+    chain: polygon,
+    title: "Refined Blue Fluid Staking Badger",
     thumbnailUrl:
-      "https://258c828e8cc853bf5e0efd001055fb39.ipfscdn.io/ipfs/bafybeif2nz6wbwuryijk2c4ayypocibexdeirlvmciqjyvlzz46mzoirtm/0.png",
-    type: "ERC1155",
+    "/RBFSB_featured_image_small.webp",
+    //"https://ipfs.io/ipfs/QmfEx7Hv2ecwTAxpM1LDmFQANMnvYUR3S4KsUNPdBhEZmG?filename=featured_image.webp",
+    type: "ERC721",
+  },
+  {
+    address: "0x852CEbD22E2DedC5844F594D70fd2Bd44704De48",
+    chain: polygon,
+    title: "Refined Red Fluid Staking Badger",
+    thumbnailUrl:
+    "/RRFSB_featured_image_small.webp",
+      //"https://ipfs.io/ipfs/QmSEfuZvhbtDcvdKjJEE4Nsma7J4qSo5mSV1ZbGMPG8QLK?filename=featured_image.webp",
+    type: "ERC721",
+  },
+  {
+    address: "0xa41573F9A4791be31D538FA5916d1Ee8B849eC52",
+    chain: polygon,
+    title: "Refined Fluid Liquid Badgers α",
+    thumbnailUrl:
+      "https://nftstorage.link/ipfs/bafybeiay4hmhtxoie47v4xxjk4z6gnfov4qwebuztkr64jihlip3ww7al4/logo.gif",
+    type: "ERC721",
   },
 ];

@@ -1,5 +1,5 @@
 import type { Chain } from "thirdweb";
-import { avalancheFuji, polygonAmoy, sepolia } from "./chains";
+import { polygon } from "./chains";
 
 export type Token = {
   tokenAddress: string;
@@ -22,58 +22,54 @@ export type SupportedTokens = {
  */
 export const SUPPORTED_TOKENS: SupportedTokens[] = [
   {
-    chain: avalancheFuji,
+    chain: polygon,
     tokens: [
-      {
-        tokenAddress: "0x5425890298aed601595a70ab815c96711a31bc65",
-        symbol: "USDC",
-        icon: "/erc20-icons/usdc.png",
-      },
-      {
-        tokenAddress: "0x82dcec6aa3c8bfe2c96d40d8805ee0da15708643",
-        symbol: "USDT",
-        icon: "/erc20-icons/usdt.png",
-      },
-      // Add more ERC20 here...
-    ],
-  },
 
-  {
-    chain: polygonAmoy,
-    tokens: [
-      {
-        tokenAddress: "0x41e94eb019c0762f9bfcf9fb1e58725bfb0e7582",
-        symbol: "USDC",
-        icon: "/erc20-icons/usdc.png",
-      },
-      {
-        tokenAddress: "0xbcf39d8616d15fd146dd5db4a86b4f244a9bc772",
-        symbol: "USDT",
-        icon: "/erc20-icons/usdt.png",
-      },
-    ],
-  },
 
-  {
-    chain: sepolia,
-    tokens: [
       {
-        tokenAddress: "0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238",
+        tokenAddress: "0xd5bd4BeEf25b5952a1462e92C73CF8dc5870D683",
+        symbol: "DMF",
+        icon: "/erc20-icons/dmf.png",
+      },
+      {
+        tokenAddress: "0x1fD0E55C66B42be30793Eae30DbCdB8A8184DF42",
+        symbol: "SMF",
+        icon: "/erc20-icons/smf.png",
+      },
+      {
+        tokenAddress: "0x6238F788a7291f5D1b4786F7CE0835468cd84fBa",
+        symbol: "RPF",
+        icon: "/erc20-icons/rpf.png",
+      },
+      {
+        tokenAddress: "0x645Cb7A052b178cbB4eDCF9bc4A28F9Fcc67b5A7",
+        symbol: "RGF",
+        icon: "/erc20-icons/rgf.png",
+      },
+      {
+        tokenAddress: "0x512037B66BacD1b020AA439e159934095Df8A2C8",
+        symbol: "RBF",
+        icon: "/erc20-icons/rbf.png",
+      },
+      {
+        tokenAddress: "0x7F8A9B97d252E76919eb70fe48cE78835af7a6D9 ",
+        symbol: "RRF",
+        icon: "/erc20-icons/rrf.png",
+      },
+      {
+        tokenAddress: "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359",
         symbol: "USDC",
         icon: "/erc20-icons/usdc.png",
       },
       {
-        tokenAddress: "0x36160274b0ed3673e67f2ca5923560a7a0c523aa",
+        tokenAddress: "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
         symbol: "USDT",
         icon: "/erc20-icons/usdt.png",
       },
     ],
   },
-];
+]
 
 export const NATIVE_TOKEN_ICON_MAP: { [key in Chain["id"]]: string } = {
-  1: "/native-token-icons/eth.png",
-  [sepolia.id]: "/native-token-icons/eth.png",
-  [avalancheFuji.id]: "/native-token-icons/avax.png",
-  [polygonAmoy.id]: "/native-token-icons/matic.png",
+  [polygon.id]: "/native-token-icons/matic.png",
 };

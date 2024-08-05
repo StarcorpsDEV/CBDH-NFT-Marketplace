@@ -10,8 +10,6 @@ import {
   Flex,
   Heading,
   Image,
-  Stack,
-  StackDivider,
   Text,
 } from "@chakra-ui/react";
 
@@ -23,27 +21,22 @@ export default function Home() {
           {/* Delete this <Card /> in your own app */}
           <Card border="1px" maxW="90vw" mx="auto">
             <CardHeader>
-              <Heading size="md">Marketplace Template v2</Heading>
+              <Heading size="md">Collectif of the Badgers Diamond Hands</Heading>
             </CardHeader>
 
             <CardBody>
-              <Stack divider={<StackDivider />} spacing="4">
-                {_latestUpdates.map((item) => (
-                  <Box key={item.title}>
-                    <Heading size="xs" textTransform="uppercase">
-                      {item.title}
-                    </Heading>
-                    {item.bullet_points.map((pt) => (
-                      <Text pt="2" fontSize="sm" key={pt}>
-                        {pt}
-                      </Text>
-                    ))}
-                  </Box>
-                ))}
-              </Stack>
+            <Link _hover={{ textDecoration: "none" }}
+                href={`https://badgerscollectif.com`}
+                target={'_blank'}
+              >
+                <Image src={"cbdh_logo.webp"}  style={{"position":"relative", "width":"25%", "left":"37.5%"}}/>
+                <Text mt="10px">
+                  {"To Mint and Stake the Collectif NFTs visit our Gallery."}
+                </Text>
+            </Link>
             </CardBody>
           </Card>
-          <Heading ml="20px" mt="40px">
+          <Heading  size="md" ml="20px" mt="40px">
             Trending collections
           </Heading>
           <Flex
@@ -73,41 +66,3 @@ export default function Home() {
     </Flex>
   );
 }
-
-// Delete this in your own app
-const _latestUpdates: Array<{ title: string; bullet_points: string[] }> = [
-  {
-    title: "Latest software",
-    bullet_points: [
-      "Shipped with the latest thirdweb SDK (v5) and Next.js 14 (App router)",
-    ],
-  },
-  {
-    title: "Multi-chain",
-    bullet_points: [
-      "Seamlessly trade and browse items on multiple chains",
-      "You'd have to deploy a thirdweb Marketplace V3 contract on each of the chains you want to support",
-    ],
-  },
-  {
-    title: "Multiple collections supported",
-    bullet_points: [
-      "The new template now supports multiple collections, you can view your owned NFTs and your listings",
-    ],
-  },
-  {
-    title: "Upcoming features",
-    bullet_points: [
-      "Select different currencies (ERC20) when creating listings",
-      "UI for English Auctions",
-    ],
-  },
-  {
-    title: "Contribute",
-    bullet_points: [
-      "We welcome all contributions from the community.",
-      "Found a bug or have some suggestions? Create a GitHub issue!",
-      "Repo: https://github.com/thirdweb-example/marketplace-template",
-    ],
-  },
-];

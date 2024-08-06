@@ -73,12 +73,4 @@ export const NFT_CONTRACTS: NftContract[] = [
       //"https://ipfs.io/ipfs/QmSEfuZvhbtDcvdKjJEE4Nsma7J4qSo5mSV1ZbGMPG8QLK?filename=featured_image.webp",
     type: "ERC721",
   },
-  {
-    address: "0xa41573F9A4791be31D538FA5916d1Ee8B849eC52",
-    chain: polygon,
-    title: "Refined Fluid Liquid Badgers α",
-    thumbnailUrl:
-      "https://nftstorage.link/ipfs/bafybeiay4hmhtxoie47v4xxjk4z6gnfov4qwebuztkr64jihlip3ww7al4/logo.gif",
-    type: "ERC721",
-  },
 ];

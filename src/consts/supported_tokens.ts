@@ -32,7 +32,7 @@ export const SUPPORTED_TOKENS: SupportedTokens[] = [
         icon: "/erc20-icons/dmf.png",
       },
       {
-        tokenAddress: "0x1fD0E55C66B42be30793Eae30DbCdB8A8184DF42",
+        tokenAddress: "0xBfC68ed382e12B81bd8a3517c4FD3Cf76Cf853f9",
         symbol: "SMF",
         icon: "/erc20-icons/smf.png",
       },
